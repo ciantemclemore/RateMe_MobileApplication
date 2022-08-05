@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RateMe</string>
+    <string name="searchbar_hint">Search for a movie</string>
+    <string name="search_button">Search</string>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rowItem_title">Title</string>
+    <string name="rowItem_year">Year</string>
+    <string name="rowItem_type">Type</string>
+    <string name="rowItem_imdbRating">IMDbRating</string>
+    <string name="rateDialog_title">Rate Movie</string>
+    <string name="rateDialog_positiveButton">Save</string>
+    <string name="rateDialog_negativeButton">Cancel</string>
+    <string name="splash_screen_fromText">from</string>
+    <string name="splash_screen_titleText">RateMe</string>
+    <string name="user_rated_movies_text">No movies have been rated</string>
+</resources>

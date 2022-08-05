@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Search"
+          android:icon="@drawable/ic_baseline_search_24"
+          android:id="@+id/search_menu_item"/>
+    <item android:title="Rated"
+          android:icon="@drawable/ic_baseline_star_rate_24"
+          android:id="@+id/rated_menu_item"/>
+</menu>

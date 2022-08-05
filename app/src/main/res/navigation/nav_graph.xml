@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchMenu">
+
+    <fragment
+        android:id="@+id/searchMenu"
+        android:name="com.example.ciante_mclemore_homework1.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.ciante_mclemore_homework1.SearchResultFragment"
+        android:label="fragment_search_result"
+        tools:layout="@layout/fragment_search_result">
+        <argument
+            android:name="MovieSearchResults"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_searchResultFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratedMovies"
+        android:name="com.example.ciante_mclemore_homework1.UserRatedMoviesFragment"
+        android:label="fragment_user_rated_movies"
+        tools:layout="@layout/fragment_user_rated_movies"></fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.ciante_mclemore_homework1.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="MovieDetailResult"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_rated_menu_item"
+            app:destination="@id/rated_menu_item" />
+    </fragment>
+</navigation>
